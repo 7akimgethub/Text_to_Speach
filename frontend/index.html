@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="title">Text to Speech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="language-switcher">
+        <button id="lang-en">English</button>
+        <button id="lang-ar">العربية</button>
+    </div>
+    <div class="container">
+        <h1 data-key="title">Text to Speech</h1>
+        <div class="language-selector">
+            <label for="lang-select" data-key="language_label">Language:</label>
+            <select id="lang-select"></select>
+        </div>
+        <div class="voice-selector">
+            <label for="voice-select" data-key="voice_label">Voice:</label>
+            <select id="voice-select"></select>
+        </div>
+        <textarea id="text-input" data-key="placeholder" placeholder="Enter text to speak..."></textarea>
+        <button id="speak-button" data-key="speak_button">Speak</button>
+        <audio id="audio-output" controls></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
